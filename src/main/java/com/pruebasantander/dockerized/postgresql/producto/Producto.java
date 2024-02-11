@@ -16,12 +16,17 @@ public class Producto {
     @Column(name = "precio", nullable = false)
     private Double precio;
 
-    public Producto(long l, String s, double v) {
+    // Constructor sin argumentos requerido por JPA
+    public Producto() {
     }
 
+    // Constructor con argumentos
+    public Producto(String nombre, Double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
 
     // Getters and setters
-
 
     public Long getId() {
         return id;

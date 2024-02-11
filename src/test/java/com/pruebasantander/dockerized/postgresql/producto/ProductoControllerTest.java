@@ -25,8 +25,8 @@ public class ProductoControllerTest {
     public void testGetAllProductos() {
         // Given
         List<Producto> productos = Arrays.asList(
-                new Producto(1L, "Producto 1", 10.0),
-                new Producto(2L,"Producto 2", 20.0)
+                new Producto( "Producto 1", 10.0),
+                new Producto("Producto 2", 20.0)
         );
         when(productoRepository.findAll()).thenReturn(productos);
 
