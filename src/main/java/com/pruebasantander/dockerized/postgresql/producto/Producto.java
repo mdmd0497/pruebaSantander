@@ -6,9 +6,6 @@ import jakarta.persistence.*;
 @Table(name = "productos")
 public class Producto {
 
-
-    public Producto(long l, String s, double v) {
-    }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -19,6 +16,8 @@ public class Producto {
     @Column(name = "precio", nullable = false)
     private Double precio;
 
+    public Producto(long l, String s, double v) {
+    }
 
 
     // Getters and setters
