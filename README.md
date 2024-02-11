@@ -7,7 +7,16 @@
 1. Asegúrese de tener Docker instalado y funcionando.
 2. Clone el repositorio de GitHub.
 3. Cambie al directorio del proyecto.
-4. Ejecute el siguiente comando para construir las imágenes de Docker y ejecutar la aplicación:
+4. ejecutar el siguiente comando para crear una imagen jar y no hayan problemas al ejecutar docker
+
+```
+./mvnw clean package -DskipTests
+```
+5. luego crear la imagen necesaria para el proyecto
+```
+docker-compose build java_app
+```
+7. Ejecute el siguiente comando para construir las imágenes de Docker y ejecutar la aplicación:
 ```
 docker-compose up
 ```
