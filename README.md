@@ -7,20 +7,16 @@
 1. Asegúrese de tener Docker instalado y funcionando.
 2. Clone el repositorio de GitHub.
 3. Cambie al directorio del proyecto.
-4. ejecutar el siguiente comando para crear una imagen jar y no hayan problemas al ejecutar docker
 
-```
-./mvnw clean package -DskipTests
-```
-5. luego crear la imagen necesaria para el proyecto
+4. luego crear la imagen necesaria para el proyecto
 ```
 docker-compose build java_app
 ```
-7. Ejecute el siguiente comando para construir las imágenes de Docker y ejecutar la aplicación:
+5. Ejecute el siguiente comando para construir las imágenes de Docker y ejecutar la aplicación:
 ```
 docker-compose up
 ```
-5. La aplicación estará disponible en la URL http://localhost:8080.
+6. La aplicación estará disponible en la URL http://localhost:8080.
 
 
 **Metodos para probar Endpoints
